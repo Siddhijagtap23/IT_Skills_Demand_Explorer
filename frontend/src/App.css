@@ -1,0 +1,276 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f6fb;
+  color: #20243a;
+}
+
+button {
+  border: none;
+  border-radius: 8px;
+  padding: 11px 20px;
+  background: #536dfe;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #3e54db;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+input {
+  width: 100%;
+  padding: 13px;
+  margin: 10px 0;
+  border: 1px solid #dce1ed;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+  background: white;
+}
+
+input:focus {
+  border-color: #536dfe;
+}
+
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #e8edff, #f5eaff);
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 420px;
+  padding: 40px;
+  background: white;
+  border-radius: 18px;
+  box-shadow: 0 12px 40px rgba(42, 55, 100, 0.12);
+}
+
+.auth-card h1 {
+  color: #536dfe;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.auth-card h2 {
+  margin: 28px 0 12px;
+}
+
+.auth-card > button {
+  width: 100%;
+  margin-top: 12px;
+}
+
+.auth-card p {
+  color: #737b91;
+  font-size: 14px;
+  margin-top: 12px;
+}
+
+.link-button {
+  background: transparent;
+  color: #536dfe;
+  padding: 5px 8px;
+}
+
+.link-button:hover {
+  background: #f0f2ff;
+  color: #3e54db;
+}
+
+.app header {
+  background: white;
+  padding: 18px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+}
+
+.app header h2 {
+  color: #536dfe;
+  font-size: 21px;
+}
+
+main {
+  max-width: 1150px;
+  margin: 35px auto;
+  padding: 0 22px;
+}
+
+main > h1 {
+  font-size: 30px;
+  margin-bottom: 8px;
+}
+
+main > p {
+  color: #737b91;
+  margin-bottom: 25px;
+}
+
+.panel {
+  background: white;
+  padding: 25px;
+  margin: 22px 0;
+  border-radius: 14px;
+  box-shadow: 0 3px 15px rgba(35, 50, 90, 0.05);
+}
+
+.panel h2 {
+  font-size: 19px;
+  margin-bottom: 18px;
+}
+
+.panel form {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.panel form input {
+  flex: 1;
+  min-width: 200px;
+}
+
+.dataset {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  padding: 15px 0;
+  border-bottom: 1px solid #edf0f6;
+}
+
+.dataset:last-child {
+  border-bottom: none;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin: 20px 0;
+}
+
+.stat {
+  background: white;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 3px 15px rgba(35, 50, 90, 0.05);
+}
+
+.stat h3 {
+  color: #536dfe;
+  font-size: 26px;
+  margin-bottom: 8px;
+  overflow-wrap: anywhere;
+}
+
+.stat p {
+  color: #737b91;
+  font-size: 14px;
+}
+
+.skill {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 5px;
+  border-bottom: 1px solid #edf0f6;
+}
+
+.skill:last-child {
+  border-bottom: none;
+}
+
+.skill strong {
+  color: #536dfe;
+}
+
+.message {
+  background: #eef1ff;
+  color: #3448b5;
+  padding: 13px;
+  border-radius: 8px;
+  margin: 15px 0;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 750px) {
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .auth-card {
+    padding: 25px;
+  }
+
+  .dataset {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 450px) {
+  .stats {
+    grid-template-columns: 1fr;
+  }
+
+  .app header h2 {
+    font-size: 16px;
+  }
+}
+
+.chart-container {
+  width: 100%;
+  height: 350px;
+  margin: 20px 0;
+  position: relative;
+}
+
+.demand-table {
+  width: 100%;
+  overflow-x: auto;
+  margin-top: 15px;
+}
+
+.demand-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.demand-table th,
+.demand-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.demand-table th {
+  background: #eef2ff;
+  color: #333;
+}
+
+.demand-table tr:hover {
+  background: #f5f7ff;
+}
+
