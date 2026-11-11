@@ -1,0 +1,12 @@
+
+job_title,role,company,location,experience_min,experience_max,salary_min,salary_max,skills,posted_date
+Data Analyst,Data Analyst,ABC Tech,Pune,0,2,300000,500000,"Python, SQL, Excel, Power BI",2026-10-01
+Junior Data Analyst,Data Analyst,XYZ Ltd,Mumbai,1,3,350000,600000,"SQL, Excel, Tableau, Python",2026-10-02
+Business Analyst,Business Analyst,Infosys,Pune,2,4,500000,800000,"SQL, Excel, Power BI, Communication",2026-10-03
+Python Developer,Developer,TCS,Bangalore,1,3,400000,700000,"Python, Django, SQL, Git",2026-10-04
+Data Analyst,Data Analyst,Wipro,Hyderabad,0,2,320000,550000,"Python, SQL, Power BI, Pandas",2026-10-05
+BI Analyst,Data Analyst,Tech Mahindra,Pune,2,4,450000,750000,"Power BI, SQL, Excel, Tableau",2026-10-06
+Data Scientist,Data Scientist,ABC Analytics,Mumbai,1,3,500000,900000,"Python, SQL, Pandas, Machine Learning",2026-10-07
+Junior Developer,Developer,Infosys,Pune,0,2,300000,500000,"Python, Django, Git, SQL",2026-10-08
+Reporting Analyst,Data Analyst,XYZ Tech,Delhi,1,3,350000,600000,"Excel, SQL, Power BI, Tableau",2026-10-09
+Business Analyst,Business Analyst,TCS,Mumbai,2,5,500000,850000,"Excel, SQL, Python, Power BI",2026-10-10
