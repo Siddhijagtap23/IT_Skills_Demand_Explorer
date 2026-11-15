@@ -1,4 +1,5 @@
-
+from drf_spectacular.utils import extend_schema
+from .serializers import RegisterSerializer, LoginSerializer
 from rest_framework import generics, status
 from rest_framework.permissions import AllowAny, IsAuthenticated
 from rest_framework.authtoken.models import Token
@@ -13,7 +14,8 @@ class RegisterView(generics.CreateAPIView):
     serializer_class = RegisterSerializer
     permission_classes = [AllowAny]
 
-
+@extend_schema(request=LoginSerializer)
+ 
 class LoginView(APIView):
     permission_classes = [AllowAny]
 
